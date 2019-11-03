@@ -1,4 +1,4 @@
-package auth // import "github.com/tgglv/wc-api-go/auth"
+package auth // import "github.com/thanks173/wc-api-go/auth"
 
 import (
 	"strconv"

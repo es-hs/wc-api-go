@@ -1,7 +1,7 @@
 package net
 
 import (
-	"github.com/tgglv/wc-api-go/request"
+	"github.com/thanks173/wc-api-go/request"
 )
 
 // URLBuilderMock ...
