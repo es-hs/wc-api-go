@@ -73,11 +73,11 @@ func main() {
 
 ## Methods
 
-|    Params    |   Type   |                         Description                          |
-| ------------ | -------- | ------------------------------------------------------------ |
-| `endpoint`   | `string` | WooCommerce API endpoint, example: `customers` or `order/12` |
-| `data`       | `array`  | Only for POST and PUT, data that will be converted to JSON   |
-| `parameters` | `array`  | Only for GET and DELETE, request query string                |
+|    Params    |     Type     |                         Description                          |
+| ------------ | ------------ | ------------------------------------------------------------ |
+| `endpoint`   | `string`     | WooCommerce API endpoint, example: `customers` or `order/12` |
+| `body`       | `interface`  | Only for POST and PUT, data that will be converted to JSON   |
+| `parameters` | `url.Values` | Only for GET and DELETE, request query string                |
 
 ### GET
 
@@ -88,13 +88,13 @@ c.Get(endpoint, parameters)
 ### POST
 
 ```go
-c.Post(endpoint, data)
+c.Post(endpoint, nil, body)
 ```
 
 ### PUT
 
 ```go
-c.Put(endpoint, data)
+c.Put(endpoint, nil, body)
 ```
 
 ### DELETE
@@ -156,5 +156,6 @@ func main() {
 
 ## Release History
 
+- 2019-11-03 - 1.0.2 - Fix POST request
 - 2019-04-14 - 1.0.1 - Fix sample integration setup in README.md
 - 2019-01-12 - 1.0.0 - First Release
