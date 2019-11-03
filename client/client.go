@@ -1,9 +1,10 @@
 package client // import "github.com/thanks173/wc-api-go/client"
 
 import (
-	"github.com/thanks173/wc-api-go/request"
 	"net/http"
 	"net/url"
+
+	"github.com/thanks173/wc-api-go/request"
 )
 
 // Client is upper level class which delegate all work to Requester
@@ -21,20 +22,21 @@ func (c *Client) Get(endpoint string, parameters url.Values) (*http.Response, er
 }
 
 // Post Method usually creates new instances
-func (c *Client) Post(endpoint string, data url.Values) (*http.Response, error) {
+func (c *Client) Post(endpoint string, parameters url.Values, body interface{}) (*http.Response, error) {
 	return c.sender.Send(request.Request{
 		Method:   "POST",
 		Endpoint: endpoint,
-		Values:   data,
+		Values:   parameters,
+		Body:     body,
 	})
 }
 
 // Put Method usually update existing instances
-func (c *Client) Put(endpoint string, data url.Values) (*http.Response, error) {
+func (c *Client) Put(endpoint string, parameters url.Values) (*http.Response, error) {
 	return c.sender.Send(request.Request{
 		Method:   "PUT",
 		Endpoint: endpoint,
-		Values:   data,
+		Values:   parameters,
 	})
 }
 
