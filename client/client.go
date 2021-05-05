@@ -32,11 +32,12 @@ func (c *Client) Post(endpoint string, parameters url.Values, body interface{}) 
 }
 
 // Put Method usually update existing instances
-func (c *Client) Put(endpoint string, parameters url.Values) (*http.Response, error) {
+func (c *Client) Put(endpoint string, parameters url.Values,body interface{}) (*http.Response, error) {
 	return c.sender.Send(request.Request{
 		Method:   "PUT",
 		Endpoint: endpoint,
 		Values:   parameters,
+		Body: body,
 	})
 }
 
