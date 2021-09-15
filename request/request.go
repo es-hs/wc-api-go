@@ -1,4 +1,4 @@
-package request // import "github.com/thanks173/wc-api-go/request"
+package request // import "github.com/Buccaneer69/wc-api-go/request"
 
 import (
 	"net/url"

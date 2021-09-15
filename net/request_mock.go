@@ -1,7 +1,7 @@
 package net
 
 import (
-	"github.com/thanks173/wc-api-go/auth"
+	"github.com/Buccaneer69/wc-api-go/auth"
 	"net/http"
 )
 

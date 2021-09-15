@@ -1,10 +1,10 @@
-package client // import "github.com/thanks173/wc-api-go/client"
+package client // import "github.com/Buccaneer69/wc-api-go/client"
 
 import (
 	"net/http"
 	"net/url"
 
-	"github.com/thanks173/wc-api-go/request"
+	"github.com/Buccaneer69/wc-api-go/request"
 )
 
 // Client is upper level class which delegate all work to Requester

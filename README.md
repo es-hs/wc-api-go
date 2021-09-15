@@ -2,20 +2,20 @@
 
 A Golang wrapper for the WooCommerce REST API. Easily interact with the WooCommerce REST API securely using this library. If using a HTTPS connection this library uses BasicAuth, else it uses Oauth to provide a secure connection to WooCommerce.
 
-[![Build Status](https://travis-ci.com/thanks173/wc-api-go.svg?branch=master)](https://travis-ci.com/thanks173/wc-api-go)
+[![Build Status](https://travis-ci.com/Buccaneer69/wc-api-go.svg?branch=master)](https://travis-ci.com/Buccaneer69/wc-api-go)
 
 ## Installation
 
 To install this WooCommerce REST API Golang Wrapper, use `go get`:
 ```
-go get github.com/thanks173/wc-api-go
+go get github.com/Buccaneer69/wc-api-go
 ```
 
 ## Staying up to date
 
 To update WooCommerce REST API Golang Wrapper to the latest version, use
 ```
-go get -u github.com/thanks173/wc-api-go
+go get -u github.com/Buccaneer69/wc-api-go
 ```
 
 ## Getting started
@@ -29,7 +29,7 @@ Check out the WooCommerce API endpoints and data that can be manipulated in <htt
 Setup for the new WP REST API integration:
 
 ```go
-import "github.com/thanks173/wc-api-go/client"
+import "github.com/Buccaneer69/wc-api-go/client"
 
 func main() {
 	factory := client.Factory{}
@@ -119,8 +119,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/thanks173/wc-api-go/client"
-	"github.com/thanks173/wc-api-go/options"
+	"github.com/Buccaneer69/wc-api-go/client"
+	"github.com/Buccaneer69/wc-api-go/options"
 	"io/ioutil"
 	"log"
 	"net/http"
