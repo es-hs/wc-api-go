@@ -1,10 +1,10 @@
-package client // import "github.com/Buccaneer69/wc-api-go/client"
+package client // import "github.com/es-hs/wc-api-go/client"
 
 import (
 	"net/http"
 	"net/url"
 
-	"github.com/Buccaneer69/wc-api-go/request"
+	"github.com/es-hs/wc-api-go/request"
 )
 
 // Client is upper level class which delegate all work to Requester
@@ -32,12 +32,12 @@ func (c *Client) Post(endpoint string, parameters url.Values, body interface{}) 
 }
 
 // Put Method usually update existing instances
-func (c *Client) Put(endpoint string, parameters url.Values,body interface{}) (*http.Response, error) {
+func (c *Client) Put(endpoint string, parameters url.Values, body interface{}) (*http.Response, error) {
 	return c.sender.Send(request.Request{
 		Method:   "PUT",
 		Endpoint: endpoint,
 		Values:   parameters,
-		Body: body,
+		Body:     body,
 	})
 }
 

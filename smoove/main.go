@@ -2,8 +2,8 @@ package smoove
 
 import (
 	"fmt"
-	"github.com/Buccaneer69/wc-api-go/client"
-	"github.com/Buccaneer69/wc-api-go/options"
+	"github.com/es-hs/wc-api-go/client"
+	"github.com/es-hs/wc-api-go/options"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -22,7 +22,7 @@ func main() {
 		},
 	})
 
-	// Further using of client ... 
+	// Further using of client ...
 	// POST /wp-json/wc/v3/products
 	// req, err := c.Post(endpoint, nil, body)
 
@@ -38,6 +38,5 @@ func main() {
 			fmt.Println(string(bodyBytes))
 		}
 	}
-
 
 }

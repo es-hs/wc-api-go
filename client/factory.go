@@ -1,10 +1,10 @@
-package client // import "github.com/Buccaneer69/wc-api-go/client"
+package client // import "github.com/es-hs/wc-api-go/client"
 
 import (
-	"github.com/Buccaneer69/wc-api-go/auth"
-	"github.com/Buccaneer69/wc-api-go/net"
-	"github.com/Buccaneer69/wc-api-go/options"
-	"github.com/Buccaneer69/wc-api-go/url"
+	"github.com/es-hs/wc-api-go/auth"
+	"github.com/es-hs/wc-api-go/net"
+	"github.com/es-hs/wc-api-go/options"
+	"github.com/es-hs/wc-api-go/url"
 	"net/http"
 )
 

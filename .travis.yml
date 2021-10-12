@@ -3,6 +3,6 @@ language: go
 go:
   - "1.17.x"
 
-go_import_path: github.com/Buccaneer69/wc-api-go
+go_import_path: github.com/es-hs/wc-api-go
 
 script: go test -v ./...
