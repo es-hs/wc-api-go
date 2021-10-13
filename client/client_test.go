@@ -2,13 +2,15 @@ package client
 
 import (
 	"errors"
-	"github.com/es-hs/wc-api-go/request"
-	"github.com/es-hs/wc-api-go/test"
-	"github.com/stretchr/testify/assert"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"net/url"
 	"testing"
+
+	"github.com/es-hs/wc-api-go/request"
+	"github.com/es-hs/wc-api-go/test"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestRequest(t *testing.T) {
@@ -35,6 +37,8 @@ func TestRequest(t *testing.T) {
 		r, _ := executeRequest(client, &request)
 
 		body, _ := ioutil.ReadAll(r.Body)
+		log.Println(getResponseBody(method))
+		log.Println(string(body))
 		Assert.Equal(getResponseBody(method), string(body))
 
 		err := r.Body.Close()
@@ -58,7 +62,7 @@ func executeRequest(c Client, r *request.Request) (*http.Response, error) {
 	case "POST":
 		return c.Post(r.Endpoint, r.Values, r.Body)
 	case "PUT":
-		return c.Put(r.Endpoint, r.Values)
+		return c.Put(r.Endpoint, r.Values, r.Body)
 	case "DELETE":
 		return c.Delete(r.Endpoint, r.Values)
 	case "OPTIONS":
