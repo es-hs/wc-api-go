@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/es-hs/wc-api-go/request"
-	"github.com/es-hs/wc-api-go/test"
+	"github.com/gempages/wc-api-go/request"
+	"github.com/gempages/wc-api-go/test"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,7 +1,7 @@
-package client // import "github.com/es-hs/wc-api-go/client"
+package client // import "github.com/gempages/wc-api-go/client"
 
 import (
-	"github.com/es-hs/wc-api-go/request"
+	"github.com/gempages/wc-api-go/request"
 	"net/http"
 )
 

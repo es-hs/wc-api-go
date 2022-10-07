@@ -1,7 +1,7 @@
 package net
 
 import (
-	"github.com/es-hs/wc-api-go/request"
+	"github.com/gempages/wc-api-go/request"
 )
 
 // URLBuilderMock ...
@@ -10,7 +10,7 @@ type URLBuilderMock struct {
 	isBasicAuth bool
 }
 
-//GetURL ...
+// GetURL ...
 func (b *URLBuilderMock) GetURL(req request.Request) string {
 	return b.url
 }

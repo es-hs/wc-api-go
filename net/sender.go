@@ -1,11 +1,11 @@
-package net // import "github.com/es-hs/wc-api-go/net"
+package net // import "github.com/gempages/wc-api-go/net"
 
 import (
 	"bytes"
 	"encoding/json"
 	"net/http"
 
-	"github.com/es-hs/wc-api-go/request"
+	"github.com/gempages/wc-api-go/request"
 )
 
 // Sender provides HTTP Requests

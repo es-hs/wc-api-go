@@ -1,10 +1,10 @@
-package client // import "github.com/es-hs/wc-api-go/client"
+package client // import "github.com/gempages/wc-api-go/client"
 
 import (
-	"github.com/es-hs/wc-api-go/auth"
-	"github.com/es-hs/wc-api-go/net"
-	"github.com/es-hs/wc-api-go/options"
-	"github.com/es-hs/wc-api-go/url"
+	"github.com/gempages/wc-api-go/auth"
+	"github.com/gempages/wc-api-go/net"
+	"github.com/gempages/wc-api-go/options"
+	"github.com/gempages/wc-api-go/url"
 	"net/http"
 )
 

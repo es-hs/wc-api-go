@@ -1,8 +1,8 @@
 package url
 
 import (
-	"github.com/es-hs/wc-api-go/options"
-	"github.com/es-hs/wc-api-go/request"
+	"github.com/gempages/wc-api-go/options"
+	"github.com/gempages/wc-api-go/request"
 	"github.com/stretchr/testify/assert"
 	URL "net/url"
 	"testing"

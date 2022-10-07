@@ -1,7 +1,7 @@
-package url // import "github.com/es-hs/wc-api-go/url"
+package url // import "github.com/gempages/wc-api-go/url"
 
 import (
-	"github.com/es-hs/wc-api-go/request"
+	"github.com/gempages/wc-api-go/request"
 	"net/url"
 )
 

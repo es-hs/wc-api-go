@@ -1,4 +1,4 @@
-package options // import "github.com/es-hs/wc-api-go/options"
+package options // import "github.com/gempages/wc-api-go/options"
 
 import (
 	"strconv"

@@ -1,11 +1,8 @@
-module wc-api-go
+module github.com/gempages/wc-api-go
 
 go 1.17
 
-require (
-	github.com/es-hs/wc-api-go v0.0.0-20211012052444-3e09b2239255
-	github.com/stretchr/testify v1.7.0
-)
+require github.com/stretchr/testify v1.7.0
 
 require (
 	github.com/davecgh/go-spew v1.1.0 // indirect

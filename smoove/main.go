@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/es-hs/wc-api-go/client"
-	"github.com/es-hs/wc-api-go/options"
+	"github.com/gempages/wc-api-go/client"
+	"github.com/gempages/wc-api-go/options"
 )
 
 type WooWebhookBatchUpdateBody struct {
